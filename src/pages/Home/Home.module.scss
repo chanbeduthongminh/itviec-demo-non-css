@@ -1,0 +1,29 @@
+.signInButton {
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+
+  &:hover {
+    background-color: #005fa3;
+  }
+}
+
+.featuresButton {
+  background-color: #cc0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 50px;
+
+  &:hover {
+    background-color: #850101;
+  }
+}
