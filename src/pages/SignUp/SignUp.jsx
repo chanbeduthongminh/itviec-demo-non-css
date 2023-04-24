@@ -11,8 +11,10 @@ function SignUp() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [success, setSuccess] = useState(false);
+
   const handleSubmit = (event) => {
     event.preventDefault();
+
     const formData = { username, email, password };
 
     axios
@@ -27,6 +29,12 @@ function SignUp() {
         // handle error response
       });
   };
+
+  if (success) {
+    alert("Sign-up successfully, please sign-in");
+    window.location.href = "/sign-in";
+  }
+
   return (
     <div>
       <form onSubmit={handleSubmit}>
