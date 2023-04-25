@@ -20,8 +20,12 @@ function SignUp() {
     axios
       .post(`${process.env.REACT_APP_BACKEND_API}/api/users/sign-up`, formData)
       .then((response) => {
-        console.log(response.data);
-        setSuccess(true);
+        if (response.data.status === 1) {
+          console.log(response.data);
+          setSuccess(true);
+        } else {
+          alert(response.data.message);
+        }
         // handle success response
       })
       .catch((error) => {
@@ -31,8 +35,8 @@ function SignUp() {
   };
 
   if (success) {
-    alert("Sign-up successfully, please sign-in");
-    window.location.href = "/sign-in";
+    alert("Đăng ký thành công");
+    // window.location.href = "/sign-in";
   }
 
   return (

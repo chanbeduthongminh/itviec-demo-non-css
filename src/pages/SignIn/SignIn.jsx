@@ -8,17 +8,22 @@ import FormWSignIn from "../../components/Form";
 const cx = classNames.bind(styles);
 
 function SignIn() {
+  const token = localStorage.getItem("token");
+  if (token) {
+    window.location.href = "/";
+  }
   return (
+    // {token? }
     <div>
       <FormWSignIn />
       <div>
         <Link to="/sign-up">
-          <button className={cx("test-button")}> Sign Up</button>
+          <button className={cx("test-button")}> Đăng ký</button>
         </Link>
       </div>
       <div>
         <Link to="/">
-          <button className={cx("test-home-button")}>Back Home</button>
+          <button className={cx("test-home-button")}>Trang chủ</button>
         </Link>
       </div>
     </div>

@@ -10,7 +10,7 @@ function FormWSignIn() {
   const [password, setPassword] = useState("");
   const [success, setSuccess] = useState(false);
 
-  const handleSubmit = (event) => {
+  const handleSubmitSignIn = (event) => {
     event.preventDefault();
     const formData = { username, password };
     axios
@@ -18,7 +18,7 @@ function FormWSignIn() {
       .then((response) => {
         const data = response.data;
         if (data.status === 1) {
-          alert(response.data.message);
+          // alert(response.data.message);
           // lưu item token vào localstorage để dùng
           localStorage.setItem("token", data.token.accessToken);
           setSuccess(true);
@@ -28,15 +28,14 @@ function FormWSignIn() {
       })
       .catch((error) => {
         console.error(error);
-        alert("An error occurred while signing in");
+        alert("An error occurred while signing inn");
       });
   };
-
   if (success) {
     window.location.href = "/";
   }
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmitSignIn}>
       <div className={cx("form-row")}>
         <label htmlFor="username" className={cx("form-label")}>
           Username:
@@ -65,7 +64,7 @@ function FormWSignIn() {
           />
         </div>
       </div>
-      <button type="submit">Sign In</button>
+      <button type="submit">Đăng nhập</button>
     </form>
   );
 }

@@ -29,10 +29,39 @@
 }
 
 .featuresImage {
-  margin-top: 50px;
   width: 500px;
 }
 
 .profile {
   margin-top: 50px;
+}
+
+.profile-check {
+  background-color: #cc0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 50px;
+  vertical-align: top;
+  &:hover {
+    background-color: #850101;
+  }
+}
+
+.profile-1 {
+  background-color: #3bff65;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 50px;
+  vertical-align: top;
+  &:hover {
+    background-color: #00c742;
+  }
 }
