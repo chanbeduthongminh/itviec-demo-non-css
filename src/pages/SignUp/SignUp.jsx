@@ -36,7 +36,7 @@ function SignUp() {
 
   if (success) {
     alert("Đăng ký thành công");
-    // window.location.href = "/sign-in";
+    window.location.href = "/sign-in";
   }
 
   return (
