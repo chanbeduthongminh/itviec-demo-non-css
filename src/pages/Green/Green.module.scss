@@ -1,0 +1,82 @@
+.header {
+  margin-top: 50px;
+}
+
+.featuresButton {
+  background-color: #79c977;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 50px;
+  vertical-align: top;
+  &:hover {
+    background-color: #33c747;
+  }
+}
+
+.test-home-button {
+  margin-top: 50px;
+}
+
+.searchInput {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.div-result {
+  margin-top: 20px;
+}
+
+// .form-row {
+//   display: flex;
+//   align-items: center;
+//   margin-bottom: 1rem;
+// }
+
+// .form-input {
+//   width: 200px;
+// }
+
+// .form-input input {
+//   width: 100%;
+//   padding: 0.5rem;
+//   border-radius: 4px;
+//   border: 1px solid #ccc;
+// }
+// .form-label {
+//   margin-right: 1rem;
+//   min-width: 80px;
+// }
+.form-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.form-label {
+  margin-right: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  flex-shrink: 0;
+  width: 140px; /* adjust this value to fit your layout */
+}
+
+.form-input {
+  flex-grow: 1;
+}
+
+.form-input input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
